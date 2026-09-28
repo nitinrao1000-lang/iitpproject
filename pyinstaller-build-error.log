@@ -1,0 +1,33 @@
+157 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.7
+159 INFO: Python: 3.14.6
+198 INFO: Platform: Windows-11-10.0.26200-SP0
+201 INFO: Python environment: C:\Python314
+204 INFO: wrote C:\Users\nitin\OneDrive\Desktop\IITPProject\nitinmultillm.spec
+208 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\nitin\\OneDrive\\Desktop\\IITPProject',
+ 'C:\\Python314\\python314.zip',
+ 'C:\\Python314\\DLLs',
+ 'C:\\Python314\\Lib',
+ 'C:\\Python314',
+ 'C:\\Users\\nitin\\AppData\\Roaming\\Python\\Python314\\site-packages',
+ 'C:\\Python314\\Lib\\site-packages',
+ 'C:\\Users\\nitin\\OneDrive\\Desktop\\IITPProject']
+605 INFO: Appending 'datas' from .spec
+606 INFO: checking Analysis
+891 INFO: checking PYZ
+1031 INFO: checking PKG
+1098 INFO: Building because toc changed
+1101 INFO: Building PKG (CArchive) nitinmultillm.pkg
+6097 INFO: Building PKG (CArchive) nitinmultillm.pkg completed successfully.
+6222 INFO: Bootloader C:\Users\nitin\AppData\Roaming\Python\Python314\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+6224 INFO: checking EXE
+6282 INFO: Rebuilding EXE-00.toc because pkg is more recent
+6284 INFO: Building EXE from EXE-00.toc
+6293 INFO: Copying bootloader EXE to C:\Users\nitin\OneDrive\Desktop\IITPProject\dist\nitinmultillm.exe
+6306 INFO: Copying icon to EXE
+6310 INFO: Copying 0 resources to EXE
+6310 INFO: Embedding manifest in EXE
+6318 INFO: Appending PKG archive to EXE
+6345 INFO: Fixing EXE headers
+6603 INFO: Building EXE from EXE-00.toc completed successfully.
+6741 INFO: Build complete! The results are available in: C:\Users\nitin\OneDrive\Desktop\IITPProject\dist

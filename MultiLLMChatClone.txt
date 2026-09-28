@@ -1,0 +1,9 @@
+Author- Nitin Katakdound
+
+This is Multi LLM Chat Clone build to browse single question on multiple LLM models
+
+1. Grok
+2. Qwen
+3. OpenRouter Free (online)
+
+The key is not store/used in this project.
