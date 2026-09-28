@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Parallel Chat — Author: Nitin Katakdound -->
+  <title>Parallel Chat</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <header><div><p class="eyebrow">MULTI-MODEL SOLUTIONS</p><h1>Nitin's Multi-Ai Search.</h1></div><button id="new-chat" class="ghost">New chat</button></header>
+    <section id="mode" class="mode">Comparison mode · messages go to every selected model</section>
+    <section id="answers" class="answers" aria-live="polite">
+      {% for key, provider in providers.items() %}<article class="model-card" data-provider="{{ key }}"><div class="card-head"><span class="dot {{ key }}"></span><div><h2>{{ provider.label }}</h2><small>{{ provider.model }}</small></div></div><div class="empty">Your answer will appear here.</div></article>{% endfor %}
+    </section>
+    <form id="chat-form"><label for="prompt">Message</label><div class="composer"><textarea id="prompt" placeholder="Ask anything…" rows="2" required></textarea><button id="send" type="submit">Send <span>↵</span></button></div><p class="hint">Enter to send · Shift + Enter for a new line</p></form>
+    <footer class="project-footer" aria-label="Project details">
+      <p>Student Name: Nitin Rama Katakdound</p>
+      <p>Course: PCP in Artificial Intelligence and Machine Learning - IIT Patna Batch 2</p>
+      <p>Project: Multi-LLM Custom ChatGPT – Side-by-Side Answer Panel</p>
+    </footer>
+  </main>
+  <template id="answer-template"><article class="model-card"><div class="card-head"><span class="dot"></span><div><h2></h2><small></small></div></div><div class="answer"></div><button class="continue">Continue with this model →</button></article></template>
+  <!-- Provider labels/models are server-supplied; API keys are never exposed to the browser. -->
+  <script>const providers={{ providers|tojson }};</script><script src="{{ url_for('static', filename='app.js') }}"></script>
+</body></html>
